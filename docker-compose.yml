@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: bookcatalog
+    environment:
+      POSTGRES_USER: mirsaleh
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: bookcatalog
+    ports:
+      - "3241:5432"
+
+
